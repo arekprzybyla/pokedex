@@ -1,14 +1,16 @@
+@import "config.scss";
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  color: white;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: $fontColorPrimary;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
-  background-color: #23272A;
-  background-image: url("/background.jpg");
+  background-color: 	#23272A;
+  background-image: url('/background.jpg');
 }
 
 h1 {
@@ -20,21 +22,25 @@ p {
 }
 
 select * {
-  color: black;
+  color: $fontColorSecondary;
 }
 
 .block {
   margin: 0.5px;
   height: 20px;
   border-radius: 5px;
-  box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.3), inset -10px -10px 15px rgba(0, 0, 0, 0.3), 10px 10px 15px rgba(0, 0, 0, 0.3), -10px -10px 15px rgba(0, 0, 0, 0.3); /* Top-left inner shadow */
+  box-shadow: 
+    inset 10px 10px 15px rgba(0, 0, 0, 0.3),  /* Bottom-right inner shadow */
+    inset -10px -10px 15px rgba(0, 0, 0, 0.3), /* Top-left inner shadow */
+    10px 10px 15px rgba(0, 0, 0, 0.3),  /* Bottom-right inner shadow */
+     -10px -10px 15px rgba(0, 0, 0, 0.3); /* Top-left inner shadow */
 }
 
 .filled {
   border: 2px solid rgb(255, 255, 255);
   background-color: rgb(91, 91, 241);
+  
 }
-
 .empty {
   border: 2px solid white;
 }
@@ -46,7 +52,6 @@ select * {
 #fire {
   background-color: rgb(163, 55, 55);
 }
-
 #grass {
   background-color: rgb(83, 175, 83);
 }
@@ -111,14 +116,22 @@ select * {
   background-color: rgb(153, 100, 153);
 }
 
+//overwritten bootstrap styles//
+
 .form-select {
   min-width: 250px;
+
 }
 
 .tabs-element {
-  box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.3), inset -10px -10px 15px rgba(0, 0, 0, 0.3), 10px 10px 15px rgba(0, 0, 0, 0.2), -10px -10px 15px rgba(0, 0, 0, 0.2); /* Top-left inner shadow */
+  box-shadow: 
+    inset 10px 10px 15px rgba(0, 0, 0, 0.3),  /* Bottom-right inner shadow */
+    inset -10px -10px 15px rgba(0, 0, 0, 0.3), /* Top-left inner shadow */
+    10px 10px 15px rgba(0, 0, 0, 0.2),  /* Bottom-right inner shadow */
+     -10px -10px 15px rgba(0, 0, 0, 0.2); /* Top-left inner shadow */
   background-color: #23272A;
   width: 100%;
+
 }
 
-/*# sourceMappingURL=globals.css.map */
+//general media queries

@@ -1,0 +1,17 @@
+@import "config.scss";
+
+.titleContainer {
+    @include flex-center;
+    height: 200px;
+    
+    img {
+        max-width: 440px;
+        @media (max-width: 560px) {
+            max-width: 350px;
+        }
+        @media (max-width: 410px) {
+            max-width: 300px;
+        }
+    }
+}
+

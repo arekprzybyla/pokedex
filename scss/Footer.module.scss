@@ -1,0 +1,61 @@
+@import "config.scss";
+
+.infoDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(27, 26, 26);
+    margin-top: 180px;
+
+    padding: 0px 50px;
+    box-shadow:
+    inset 10px 10px 15px rgba(0, 0, 0, 0.1),  /* Bottom-right inner shadow */
+    inset -10px -10px 15px rgba(0, 0, 0, 0.1), /* Top-left inner shadow */
+    10px 10px 15px rgba(0, 0, 0, 0.3),  /* Bottom-right inner shadow */
+    -10px -10px 15px rgba(0, 0, 0, 0.3); /* Top-left inner shadow */
+    @media (max-width: 1140px) {
+        flex-direction: column;
+        padding: 50px;
+        .pikachuCrop {
+            margin: -350px -300px -550px -300px;
+        }
+    }
+    .pikachuCrop {
+        width: 400px;
+        height: 500px;
+        scale: 0.3;
+        overflow: hidden;
+    }
+    div {
+        flex: 1;
+        text-align: center;
+        max-width: 440px;
+        h1 {
+            margin: 20px;
+            font-size: 35px;
+        }
+        p {
+            line-height: 22px;
+            font-size: 14px
+        }
+    }
+}
+
+.footerDiv {
+    @include flex-center;
+    height: 80px;
+    p {
+        margin: 0px;
+        font-size: 9px;
+        letter-spacing: 4px;
+        @media (max-width: 560px) {
+            font-size: 8px;
+        }
+        @media (max-width: 410px) {
+            font-size: 7px;
+        }
+    }
+}
+
+
+
